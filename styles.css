@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-image: url(./imagenes/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+}
+
+/* SECCION DE LOS ATAQUES "BOTONES" Y TITULO */
+
+#botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.tarjetas {
+    display: flex;
+}
+
+.tarjetas img {
+    height: 120px;
+}
+
+.ataques {
+    background: none;
+    width: 148px;
+    height: 140px;
+    margin: -8px;
+    border: transparent;
+}
+
+/*CONTENEDOR DEL MARCADOR*/
+
+.puntuacion {
+    position: absolute;
+    display: inline-block;
+    top: 60px;
+    right: 52px;
+    width: 116px;
+    height: 102px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.marcador {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*CONTENEDOR DE LOS ATAQUES ELEGIDOS*/
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.contenedor img {
+    border: 6px rgba(255, 255, 255, 0.7) solid;
+    background-color: rgba(0, 0, 0, .35);
+    margin: 10px;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,.3);
+    width: 250px;
+}
+
+.sistema {
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: aliceblue;
+    color: rgba(0,0,0,0.7);
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/*Seccion de mensajes*/
+
+section.mensajes {
+    max-width: 564px;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#resultado {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, .05);
+    padding: 20px;
+    box-sizing: border-box;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+    border-radius: 7px;
+}
+
+/*BOTON DE REINICIAR*/
+
+#reiniciar {
+    justify-content: center;
+}
+
+#boton-reiniciar {
+    color: #fff;
+    background-color: darkslateblue;
+    padding: 1em 3em;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+
+}
+
+/*ADAPTACION PARA TELEFONOS*/
+
+@media (max-width: 360px) {
+    .titulo {
+        font-size: 22px;
+    }
+
+    .ataques {
+        margin: -20px;
+    }
+
+    .tarjetas img {
+        width: 94px;
+        height: 112px;
+    }
+
+    .puntuacion {
+        top: 188px;
+        right: 116px;
+        width: 94px;
+        height: 100px;
+    }
+
+    .contenedor img{
+        margin-top: 140px;
+        width: 164px;
+    }
+
+    .sistema {
+        width: 114px;
+    }
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Piedra | Papel | Tijeras</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <section id="botones">
+            <h1 class="titulo">Juguemos a piedra, papel o tijeras</h1>
+
+            <div class="tarjetas">
+                <button class="ataques" id="boton-piedra">
+                    <img src="./imagenes/icon-piedra.png" alt="Piedra">
+                </button>
+
+                <button class="ataques" id="boton-papel">
+                    <img src="./imagenes/icon-papel.png" alt="Papel">
+                </button>
+                
+                <button class="ataques" id="boton-tijera">
+                    <img src="./imagenes/icon-tijera.png" alt="Tijeras">
+                </button>
+            </div>
+
+        </section>
+
+        <div class="puntuacion">
+            <p class="marcador">
+                Victorias: <span id="victorias-jugador">0</span>
+            </p>
+                <br>  
+            <p class="marcador">
+                Derrotas: <span id="derrotas-jugador">0</span>
+            </p>
+                <br>
+            <p class="marcador">
+                Empates: <span id="empates">0</span>
+            </p>    
+        </div>
+
+        <div class="contenedor"> 
+            <div>
+                <img id="imagen-usuario" src="imagenes/default.png" alt="imagen por default">
+                <p class="sistema">Usuario</p>
+            </div>
+            <div>
+                <img id="imagen-pc" src="imagenes/default.png" alt="imagen por default">
+                <p class="sistema">Sistema</p>
+            </div>
+        </div>
+
+            <section class="mensajes">
+                <p id="resultado">Vamos a jugar</p>
+            </section>
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+            <script src="js/codigo.js"></script>
+    </body>
+</html>
