@@ -130,7 +130,7 @@ section.mensajes {
 
 /*ADAPTACION PARA TELEFONOS*/
 
-@media (max-width: 360px) {
+@media (max-width: 560px) {
     .titulo {
         font-size: 22px;
     }
