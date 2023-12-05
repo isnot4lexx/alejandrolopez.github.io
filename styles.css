@@ -132,7 +132,7 @@ section.mensajes {
 
 @media (max-width: 560px) {
     .titulo {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .ataques {
@@ -145,8 +145,8 @@ section.mensajes {
     }
 
     .puntuacion {
-        top: 216px;
-        right: 120px;
+        top: 190px;
+        right: 124px;
         width: 88px;
         height: 100px;
     }
