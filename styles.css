@@ -44,7 +44,7 @@ body {
 .puntuacion {
     position: absolute;
     display: inline-block;
-    top: 60px;
+    top: 128px;
     right: 52px;
     width: 116px;
     height: 102px;
@@ -153,7 +153,7 @@ section.mensajes {
 
     .contenedor img{
         margin-top: 140px;
-        width: 164px;
+        width: 144px;
     }
 
     .sistema {
